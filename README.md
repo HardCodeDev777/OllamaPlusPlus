@@ -31,10 +31,7 @@ FreeOllama(response);
 ```
 
 > [!NOTE]  
-> The base logic for communicating with Ollama is written in C#, taking into account the needs of a C++ interface.  
-> The C++ part acts as a native bridge.  
-> If you ever want to modify the internals — either on the C# or C++ side — you'll only need basic knowledge of both.  
-> In total, the entire library is just around 120 lines of code across both languages.
+> The base logic for communicating with Ollama is written in C#, taking into account the needs of a C++ interface. The C++ part acts as a native bridge. If you ever want to modify the internals — either on the C# or C++ side — you'll only need basic knowledge of both. In total, the entire library is just around 120 lines of code across both languages.
 
 It works with any model downloaded via the [Ollama CLI](https://ollama.com/library).
 
