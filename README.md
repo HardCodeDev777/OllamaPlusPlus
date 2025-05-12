@@ -9,6 +9,10 @@
 
 # 🦙 OllamaPlusPlus
 
+Listed in [Ollama Community Projects](https://github.com/ollama/ollama#community-projects)
+
+&nbsp;
+
 ## 👀 Introduction
 
 Most of the time, C++ libraries are written to be used in C#.  
