@@ -1,4 +1,17 @@
+![Ollama](https://img.shields.io/badge/Ollama-%23000000?logo=Ollama)
+![C++](https://img.shields.io/badge/C%2B%2B-%2300599C?logo=C%2B%2B)
+![C#](https://img.shields.io/badge/C%23-%23512BD4?logo=.NET)
+![License](https://img.shields.io/github/license/HardCodeDev777/OllamaPlusPlus?color=%2305991d)
+![Last commit](https://img.shields.io/github/last-commit/HardCodeDev777/OllamaPlusPlus?color=%2305991d)
+![Tag](https://img.shields.io/github/v/tag/HardCodeDev777/OllamaPlusPlus)
+![Top lang](https://img.shields.io/github/languages/top/HardCodeDev777/OllamaPlusPlus)
+
+
 # 🦙 OllamaPlusPlus
+
+Listed in [Ollama Community Integrations](https://github.com/ollama/ollama?tab=readme-ov-file#community-integrations)
+
+&nbsp;
 
 ## 👀 Introduction
 
