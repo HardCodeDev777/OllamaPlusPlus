@@ -14,8 +14,8 @@ namespace OllamaNET;
 
 public static class Program
 {
-    private static IChatClient chatClient;
-    private static List<ChatMessage> chatHistory = new();
+    private static IChatClient _chatClient;
+    private static List<ChatMessage> _chatHistory = new();
 
     [UnmanagedCallersOnly(EntryPoint = "InitOllama")]
     public static void InitOllama(IntPtr modelNamePtr)
@@ -27,7 +27,7 @@ public static class Program
 
         var app = builder.Build();
 
-        chatClient = app.Services.GetRequiredService<IChatClient>();
+        _chatClient = app.Services.GetRequiredService<IChatClient>();
     }
 
 
@@ -38,11 +38,11 @@ public static class Program
         {
             var prompt = Marshal.PtrToStringAnsi(promptPtr)!;
 
-            chatHistory.Add(new(ChatRole.User, prompt));
+            _chatHistory.Add(new(ChatRole.User, prompt));
 
             var result = StreamOllamaResponse().GetAwaiter().GetResult();
 
-            chatHistory.Add(new(ChatRole.Assistant, result));
+            _chatHistory.Add(new(ChatRole.Assistant, result));
 
             return Marshal.StringToHGlobalAnsi(result);
         }
@@ -54,7 +54,7 @@ public static class Program
     private static async Task<string> StreamOllamaResponse()
     {
         var chatResponse = "";
-        await foreach (var item in chatClient.GetStreamingResponseAsync(chatHistory)) chatResponse += item.Text;
+        await foreach (var item in _chatClient.GetStreamingResponseAsync(_chatHistory)) chatResponse += item.Text;
 
         return chatResponse;
     }
