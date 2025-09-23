@@ -140,4 +140,4 @@ See LICENSE for full terms.
 
 ---
 
-> 💬 Got feedback, found a bug, or want to contribute? Open an issue or fork the repo on GitHub!
+> 💬 Got feedback, found a bug, or want to contribute? Open an issue or fork the repo!
