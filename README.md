@@ -129,7 +129,3 @@ void FreeOllama(const char* response);
 
 This project is licensed under the **MIT License**.  
 See LICENSE for full terms.
-
----
-
-> 💬 Got feedback, found a bug, or want to contribute? Open an issue or fork the repo!
